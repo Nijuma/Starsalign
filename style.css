@@ -10,6 +10,18 @@ body {
 
 }
 
+.song {
+    padding-left: 2em;
+    transform: scale(.8);
+}
+
+.music-note {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
 .header {
     width: 100%;
     display: flex;
@@ -24,8 +36,9 @@ body {
 .left {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
+    border-right: 1px solid grey;
     padding-left: 2em;
+
 }
 
 .container {
@@ -171,4 +184,12 @@ body {
 .neptune:hover {
     transform: scale(1.4);
     transition: all 1s ease;
+}
+
+.foot {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+
 }
