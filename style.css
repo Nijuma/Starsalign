@@ -53,6 +53,85 @@ body {
 
 }
 
+.right {
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 40px; */
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 25px;
+    padding-right: 45px;
+    position: relative;
+
+
+}
+
+.sat::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 28%;
+    height: 2px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.sat:hover::after {
+
+    transform: scaleX(1);
+    transform-origin: left;
+    box-shadow: 0 0 20px yellow;
+
+}
+
+.moon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    min-width: 28%;
+    width: 43%;
+    height: 2px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+
+.moon:hover::after {
+
+    transform: scaleX(1);
+    transform-origin: left;
+    box-shadow: 0 0 20px yellow;
+
+}
+
+.acm::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    min-width: 43%;
+    width: 98%;
+    height: 2px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.acm:hover::after {
+
+    transform: scaleX(1);
+    transform-origin: left;
+    box-shadow: 0 0 20px yellow;
+
+}
+
 .container {
 
 
@@ -211,13 +290,42 @@ body {
     background-color: rgb(35, 35, 35);
     display: flex;
     margin-top: 5%;
+    text-align: center;
+    justify-content: center;
 
 
 
 }
 
+.fact {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    position: relative;
+    left: 13%;
+    color: yellow;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+.facttwo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    right: 6%;
+    font-family: 'Space Mono', monospace, sans-serif;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
 .mega {
     height: 1290px;
+    max-height: 1290px;
+
     max-width: 1770px;
     background-color: whitesmoke;
     margin: 0;
@@ -226,36 +334,34 @@ body {
     position: relative;
 }
 
+
 .bar {
     height: 70px;
-    width: 100%;
+    width: 1770px;
     background-color: papayawhip;
-
-    margin-top: .5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 8px;
     font-family: 'Space Mono', monospace, sans-serif;
     font-size: 30px;
     text-align: center;
-
-
-
+    position: relative;
+    top: 8%;
+    left: 3.5%;
 }
 
 .omega {
-    height: 1100px;
+    height: 1000px;
     width: max-content;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    right: 50%;
-    top: 12%;
+    right: 35%;
+    top: 17%;
     flex-wrap: wrap;
-    border-right: 1px solid grey;
+    /* border-right: 1px solid grey; */
 
 }
 
@@ -330,5 +436,134 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.66);
     overflow: hidden;
-    z-index: 1;
+
+}
+
+.yes {
+    position: relative;
+    left: -15%;
+    top: 15%;
+    font-size: 25px;
+    height: 1000px;
+    width: 1000px;
+
+    text-align: center;
+    font-family: 'Space Mono', monospace, sans-serif;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+
+.litty {
+    font-size: 40px;
+}
+
+.lit {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    text-align: left;
+
+}
+
+.li {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.foot {
+    height: 80px;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+
+.btn {
+    padding: 10px 35px;
+    border-radius: 10%;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.btn:hover {
+    transform: translatey(-6px);
+    background-color: red;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(255, 0, 0);
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(228, 228, 45);
+}
+
+
+.righttwo {
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 20px;
+    text-shadow: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.righttwo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.righttwo:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    box-shadow: 0 0 20px yellow;
+}
+
+
+
+
+.lefttwo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace, sans-serif;
+    position: relative;
+}
+
+.lefttwo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+
+}
+
+.lefttwo:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    box-shadow: 0 0 20px yellow;
+
 }
